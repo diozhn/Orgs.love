@@ -1,0 +1,26 @@
+@media (max-width: 900px){
+    #page-landing{
+        background-position-x: 70vw;
+    }
+
+    #page-landing #container{
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-landing main{
+        align-items: center;
+    }
+}
+
+@media (min-width: 1700px){
+    #page-landing{
+        background-position-x: 40vw;
+    }
+}
+
+@media (min-width: 760px){
+    #page-landing{
+        background-position-y: 200px;
+    }
+}
