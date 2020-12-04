@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link 
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script 
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="stylesheet" href="/public/css/page-ongs.css" />
+    <link rel="stylesheet" href="/public/css/map.css" />
+    <title>Gifty - Localize uma Ong</title>
+  </head>
+  <body>
+    <div id="ongs-loves">
+      <aside>
+        <header>
+          <img
+            id="logo"
+            src="/public/images/logo.svg"
+            alt="Logomarca do Gifty"
+          />
+          <h2>ONG NAME</h2>
+          <p>SHORT DESCRIPTION</p>
+        </header>
+        <div class="donate-link">
+          <a id="img-1" href="#">Faça uma doação</a>
+          <a id="img-2" href="#">Entre em contato</a>
+          <a id="img-3" href="#">Visite nosso website</a>
+        </div>
+      </aside>
+
+      <div id="mapid"></div>
+
+      <div class="city">
+        <a href="#" class="select-state" title="Escolha seu Estado">
+          <span></span><strong>Selecionar um Estado</strong>
+        </a>
+        <a href="#" class="select-city" title="Escolha sua Cidade">
+          <span></span><strong>Selecionar uma Cidade</strong>
+        </a>
+      </div>
+    </div>
+    <script src="/public/script/ongs-loves.js"></script>
+    <script src="/public/script/mec.js"></script>
+  </body>
+</html>

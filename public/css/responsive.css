@@ -1,26 +1,103 @@
-@media (max-width: 900px){
+@media(min-width: 0px) and (max-width: 425px){
     #page-landing{
-        background-position-x: 70vw;
+       background: none;
+       
     }
-
-    #page-landing #container{
-        align-items: center;
-        text-align: center;
-    }
-
+    #page-landing header{
+        margin-top: 5px;
+}
     #page-landing main{
+        min-width: 250px;
+        max-width: 560px;
+    }
+    .nav a{
+        min-width: 200px;
+        max-width: 360px;
+        
+    }
+    .nav a:last-child{
+        margin-bottom: 5px;
+    }
+
+}
+@media (min-width:426px) and (max-width:767px){
+    #page-landing{
+        background:none;
+    }
+    #page-landing main{
+        align-self: center;
+    }
+    
+        
+        
+        .nav a{
+            width: 100%;
+            min-width: 200px;
+            max-width: 460px;
+            height: 72px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            margin: 40px auto;
+            background-color: #B17BEC;
+            transition: 400ms;
+            text-transform: uppercase;
+            font-size: 20px;    
+        }
+    
+}
+@media (min-width:768px) and (max-width: 1023px){
+    #page-landing{
+        background:none;
+    }
+   #page-landing main{
+       align-self: center;
+   }
+    .nav a{
+        width: 100%;
+        max-width: 460px;
+        height: 72px;
+        border-radius: 8px;
+        display: flex;
         align-items: center;
+        margin: 40px;
+        background-color: #B17BEC;
+        transition: 400ms;
+        text-transform: uppercase;
+        font-size: 20px;    
+    }
+}
+@media (min-width: 1024px){
+    #page-landing{
+
+        background-position-x: clamp(40vw, 60%, 1500px);
+        background-position-y: 20vh;
+
+    }
+    p{
+        max-width: 360px;
+       
+    }
+    h1{
+        max-width:540px;
+    }
+    .nav a{
+        max-width: 350px;
+    }
+
+}
+
+@media (min-width: 1340px){
+    #page-landing{
+        background-position-x: clamp(50vw, 60%, 70vw);
+        background-position-y: 20vh; 
+    }
+    p{
+        max-width: 460px;
+    }
+    h1{
+        max-width: 560px;
     }
 }
 
-@media (min-width: 1700px){
-    #page-landing{
-        background-position-x: 40vw;
-    }
-}
-
-@media (min-width: 760px){
-    #page-landing{
-        background-position-y: 200px;
-    }
-}
+/* MAPA*/

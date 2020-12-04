@@ -1,0 +1,146 @@
+#ongs-loves {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+aside {
+  width: clamp(24rem, 25vw, 44rem);
+  background: linear-gradient(147.44deg,#b17bec 73.85%,rgba(130, 76, 190, 0.463542) 101.6%,rgba(90, 36, 150, 0) 101.6%);
+  padding: clamp(3rem, 5vw, 8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+aside h2{
+    margin-top: 1.4rem;
+    font: 800 clamp(1rem, 3vw, 1.6rem)/1.1 'Nunito', sans-serif;
+    color: white;
+}
+
+aside p{
+    margin-top: 2.4rem;
+    font: 800 .7rem/1.5 'Nunito', sans-serif;
+    color: rgb(85, 83, 77);
+}
+
+#mapid {
+    width: 100%;
+    height: 100%;
+}
+
+.donate-link {
+  position: relative;
+  align-self: center;
+}
+.donate-link a {
+  padding: 10px;
+  margin-bottom: 2.18rem;
+  font-family: 'Nunito';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+a#img-1::before {
+  content: url(/public/images/donate.svg);
+  transform: translate(0, -50%);
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  left: -65px;
+  top: 7.5%;
+}
+a#img-2::before {
+  content: url(/public/images/whatsapp.svg);
+  transform: translate(0, -50%);
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  left: -65px;
+  top: 44%;
+}
+a#img-3::before {
+  content: url(/public/images/website.svg);
+  transform: translate(0, -50%);
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  left: -65px;
+  top: 79%;
+}
+
+/* MAPA*/
+
+.city{
+    display: flex;
+    justify-content: space-between;
+}
+
+a.select-state{
+    left: 28rem;
+    bottom: 4rem;
+}
+
+a.select-city,
+a.select-state{
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+
+    z-index: 10;
+
+    width: 22rem;
+    height: 72px;
+
+    font-size: 20px;
+    color: #FFFFFF;
+
+    background: #B17BEC;
+    border: 0;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    transition: 400ms;
+    text-transform: uppercase;
+}
+
+a.select-city:hover,
+a.select-state:hover{
+    background: #9164c2;
+}
+
+a.select-city span,
+a.select-state span{
+    width: 72px;
+    height: 72px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.select-city span::after,
+a.select-state span::after{
+    content:"";
+    background-image: url('../images/localmark.svg');
+    width: 38px;
+    height: 38px;
+}
+
