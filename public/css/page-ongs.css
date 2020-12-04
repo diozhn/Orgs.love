@@ -144,3 +144,9 @@ a.select-state span::after{
     height: 38px;
 }
 
+a.select-city strong,
+a.select-state strong{
+    flex: 1;
+    text-align: center;
+}
+
